@@ -22,7 +22,7 @@ urlpatterns = [
 from django.urls import include
 
 urlpatterns += [
-    path('frontend/', include('frontend.urls')),
+    path('', include('frontend.urls')),
 ]
 from django.views.generic import RedirectView
 

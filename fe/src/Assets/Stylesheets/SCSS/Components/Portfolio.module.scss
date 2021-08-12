@@ -1,0 +1,96 @@
+$mobile-width: 500px;
+.container {
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)),
+      url("../../../Images/portfolio-background.jpg");
+    background-position: 50%;
+  }
+  background-color: #1a1a1a;
+}
+.projects {
+  margin-top: 25px;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  column-gap: 8px;
+  row-gap: 8px;
+  @media screen and (max-width: $mobile-width) {
+    grid-template-columns: 1fr;
+    .project {
+      height: 300px;
+    }
+  }
+}
+.project {
+  color: #fff;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  &:hover {
+    .project_info {
+      visibility: visible;
+      opacity: 1;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+    }
+  }
+}
+.project_info {
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  z-index: 2;
+  opacity: 0;
+  transition: 0.3s;
+  h1 {
+    font-family: var(--font-primary);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 127.9%;
+    letter-spacing: 0.15em;
+  }
+  p {
+    font-family: var(--font-secondary);
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  @media screen and (max-width: $mobile-width) {
+     padding: 0 5px;
+  }
+}
+.project_button {
+  margin-top: 30px;
+  color: white;
+  padding: 13px 20px;
+  &::before {
+    background-color: white;
+    left: -20px;
+  }
+  &::after {
+    background-color: white;
+    right: -20px;
+  }
+  &:hover {
+    color: black;
+    background-color: white;
+    box-shadow: inset 0px 0px 0px 2px white;
+  }
+}
+.more {
+  font-family: var(--font-primary);
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}

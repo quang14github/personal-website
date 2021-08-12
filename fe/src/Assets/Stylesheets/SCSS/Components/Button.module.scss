@@ -1,0 +1,42 @@
+.container {
+  background: none 0px 0px repeat scroll transparent;
+  border: medium none;
+
+  display: block;
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  font-size: 15px;
+  position: relative;
+  transition: all 0.5s ease 0.2s, margin-left 0.5s ease 0s;
+  cursor: pointer;
+  text-transform: uppercase;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 2px;
+    transition: all 0.2s ease 0s;
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+
+    top: 0px;
+    height: 100%;
+    width: 2px;
+    transition: all 0.2s ease 0s;
+  }
+  &:hover::before {
+    left: 0;
+  }
+
+  &:hover::after {
+    right: 0;
+  }
+  &:focus {
+    outline: none;
+  }
+}

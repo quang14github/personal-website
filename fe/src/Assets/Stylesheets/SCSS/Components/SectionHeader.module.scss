@@ -1,0 +1,22 @@
+$tablet-width: 768px;
+$mobile-width: 500px;
+.container {
+  font-family: var(--font-secondary);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.35538em;
+  color: #000000;
+  border: 10px solid black;
+  padding: 25px 65px 25px 65px;
+  text-transform: uppercase;
+  width: max-content;
+  @media screen and (max-width: $tablet-width) {
+    font-size: 18px;
+    padding: 15px 35px;
+  }
+}

@@ -1,7 +1,7 @@
 @import "./reset.css";
 @import "./keyframes.css";
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
 :root {
   /* varialbe declaration! */
   --primary-background: #5dc269;
@@ -26,16 +26,24 @@
 
   /* fonts */
   --font-primary: "Raleway", sans-serif;
-  --font-banner: "Bebas Neue", cursive;
+  --font-secondary: "Montserrat", sans-serif;
+}
+* {
+  box-sizing: border-box;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 /* body {
-  font-family: var(--font-primary);
   -ms-overflow-style: none;
   scrollbar-width: none;
 } */
-/* body::-webkit-scrollbar {
+*::-webkit-scrollbar {
   display: none;
-} */
+}
+body,
+html {
+  scroll-behavior: smooth;
+}
 .button {
   border: none;
   border-radius: 4px;

@@ -1,0 +1,130 @@
+$smaller-width: 1600px;
+$mobile-width: 600px;
+.container {
+  position: fixed;
+  width: 100%;
+  padding: 50px 11% 0;
+  z-index: 4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s;
+  ul {
+    display: flex;
+    align-items: center;
+    li {
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      font-family: var(--font-secondary);
+      font-style: normal;
+      font-weight: bold;
+      margin-left: 5vw;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.5;
+      }
+      transition: all 0.3s ease 0s;
+      white-space: nowrap;
+      a {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+.link_normal {
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 21px;
+}
+.link_contact {
+  background: #ffffff;
+  border: 4px solid #ffffff;
+  border-radius: 30px;
+  color: black;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-size: 15px;
+  line-height: 18px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  img {
+    cursor: pointer;
+    width: 59.67px;
+    height: 50px;
+  }
+}
+.navbar__scrolled {
+  transition: all 0.5s;
+  background-color: black;
+  padding: 15px 11%;
+}
+.menu {
+  display: none;
+}
+@media screen and (max-width: $smaller-width) {
+  .container {
+    background-color: black;
+    padding: 15px 6%;
+  }
+  .link_normal {
+    font-size: 15px;
+  }
+  .link_contact {
+    font-size: 13px;
+    padding: 10px 10px;
+  }
+}
+@media screen and (max-width: $mobile-width) {
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  .container {
+    z-index: 4;
+    height: 75px;
+    padding: 0 0;
+    ul {
+      li {
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        margin-left: 0;
+        padding: 20px 0;
+      }
+    }
+  }
+  .logo {
+    padding-left: 5%;
+    width: 100%;
+    background-color: black;
+    height: 100%;
+  }
+  .menu {
+    padding-right: 5%;
+    background-color: black;
+    height: 100%;
+  }
+  .nav_links {
+    border-top: 1px solid white;
+    position: absolute;
+    z-index: -1;
+    top: -400px;
+    display: flex;
+    flex-direction: column;
+    transition: top 1s;
+    margin-top: 75px;
+    margin-left: 0;
+    margin-right: 0;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+  }
+  .nav_links_drop {
+    top: 0;
+  }
+}

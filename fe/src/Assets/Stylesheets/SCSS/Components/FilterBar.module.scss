@@ -1,0 +1,35 @@
+
+$mobile-width: 500px;
+.container {
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  flex-flow: wrap;
+  margin: 0 auto;
+  color: #7c7c7c;
+  div {
+    margin-top: 30px;
+    padding-bottom: 8px;
+    width: 200px;
+    font-style: normal;
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: color 0.25s;
+    cursor: pointer;
+    border-bottom: 1px solid #aaaaaa;
+    &:hover {
+      color: rgb(184, 184, 184);
+    }
+   
+  }
+}
+.container {
+  .selectedCategory {
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+  }
+}
