@@ -14,10 +14,10 @@ export default function Footer() {
         </a>
       </div>
       <div className={styles.social}>
-        <a href="https://www.facebook.com/RobustDev" target="_blank">
+        <a href="https://www.facebook.com/RobustDev" target="_blank" rel="noreferrer">
           <img src={facebook} alt="facebook" />
         </a>
-        <a href="#">
+        <a href="#hero">
           <img src={linkedin} alt="linkedin" />
         </a>
         <a href="mailto:qduongminh3@gmail.com">

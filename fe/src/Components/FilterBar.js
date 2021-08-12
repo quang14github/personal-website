@@ -7,7 +7,7 @@ export default function FilterBar({ selectCate }) {
     <div className={styles.container}>
       {categories.map((e, id) => (
         <div
-          className={id == selected ? styles.selectedCategory : ""}
+          className={id === selected ? styles.selectedCategory : ""}
           key={id}
           onClick={() => {
             setSelected(id);

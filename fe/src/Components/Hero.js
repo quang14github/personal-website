@@ -19,10 +19,10 @@ export default function Hero() {
               <a href="mailto:qduongminh3@gmail.com">
                 <img src={mail_icon} alt="mail" />
               </a>
-              <a href="https://github.com/quang14github" target="_blank">
+              <a href="https://github.com/quang14github" target="_blank" rel="noreferrer">
                 <img src={github_icon} alt="github" />
               </a>
-              <a href="#">
+              <a href="#hero">
                 <img src={linkedin_icon} alt="linkedin" />
               </a>
             </div>

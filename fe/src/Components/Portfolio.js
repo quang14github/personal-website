@@ -64,7 +64,7 @@ export default function Portfolio() {
         <div className={styles.project_info}>
           <h1>{e.name}</h1>
           <p>{e.des}</p>
-          <Button className={styles.project_button}><a href={e.link} target="_blank">Github</a></Button>
+          <Button className={styles.project_button}><a href={e.link} target="_blank" rel="noreferrer">Github</a></Button>
         </div>
       </div>
     ));

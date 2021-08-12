@@ -22,7 +22,8 @@ export default function Contact() {
         className={styles.contact_seperator}
       />
       <div className={styles.formContainer}>
-        <form action="/submit/" className={styles.form} id="contact-form">
+        <form action="/submit/" className={styles.form} id="contact-form"
+        onSubmit={() => alert("Sucess")}>
           <input
             type="text"
             placeholder="ENTER YOUR NAME*"
@@ -41,7 +42,7 @@ export default function Contact() {
           Fields marked with an asterisk must be filled.
         </p>
         <Button className={styles.form_button}>
-          <input type="submit" value="SUBMIT" form="contact-form" />
+          <input type="submit" value="SUBMIT" form="contact-form"/>
         </Button>
       </div>
     </article>
